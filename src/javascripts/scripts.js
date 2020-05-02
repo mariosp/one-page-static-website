@@ -3,10 +3,14 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { changeHomeSliderBodyText } from './shared/slider';
+
 window.jQuery = $;
 window.$ = $;
 
-
-$('#home-slider').on('slid.bs.carousel', () => {
-  console.log('TRANSITION END');
-});
+(function init() {
+  changeHomeSliderBodyText(0);
+  $('#home-slider').on('slid.bs.carousel', ({ to }) => {
+    changeHomeSliderBodyText(to);
+  });
+}());
