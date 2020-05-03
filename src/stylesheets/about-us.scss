@@ -1,0 +1,54 @@
+.about-us {
+  height: calc(100vh - 56px);
+  width: 100%;
+}
+.about-me-box {
+  padding-top: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .about-header {
+    font-weight: 800;
+    font-size: 4vw;
+    margin-bottom: 20px;
+    color: #02918c;
+  }
+  .about-body {
+    margin: 20px 0;
+    text-align: center;
+    color: #7e8287;
+    font-size: 20px;
+    span {
+      font-weight: 800;
+      font-size: 25px;
+    }
+  }
+  .about-tiles {
+    margin-top: 50px;
+    .about-tile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .about-tile-img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+    .about-tile-title {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #7e8287;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .about-tile-bodys {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #7e8287;
+    }
+  }
+}

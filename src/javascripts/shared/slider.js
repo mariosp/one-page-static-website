@@ -21,6 +21,7 @@ const sliderData = [
 ];
 
 
+// eslint-disable-next-line import/prefer-default-export
 export function changeHomeSliderBodyText(index) {
   $('.body-top-text').text(sliderData[index].top);
   $('.body-head-text').text(sliderData[index].header);

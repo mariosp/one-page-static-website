@@ -2,3 +2,8 @@
 @import "~normalize.css";
 @import "header.scss";
 @import "home.scss";
+@import "about-us";
+
+html {
+  scroll-behavior: smooth;
+}
