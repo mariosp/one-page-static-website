@@ -14,3 +14,22 @@ window.$ = $;
     changeHomeSliderBodyText(to);
   });
 }());
+
+$(document).on('submit', '#formContactMe', (event) => {
+  event.preventDefault();
+  if (event.target[0].value === '') {
+    $("input[name='Name']").select();
+  } else if (event.target[1].value === '') {
+    $("input[name='Email']").select();
+  } else if (event.target[2].value === '') {
+    $("input[name='Message']").select();
+  } else {
+    alert(
+      `Name: ${event.target[0].value}
+       Email: ${event.target[1].value}
+       Message: ${event.target[2].value}`
+    );
+    $('#formContactMe')[0].reset();
+  }
+  return false;
+});

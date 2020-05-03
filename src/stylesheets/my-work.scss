@@ -1,7 +1,7 @@
 .my-work {
-  //min-height: 100vh;
+  min-height: 100vh;
   //padding-top: 56px;
-  height: calc(100vh - 56px);
+  //height: calc(100vh - 56px);
   width: 100%;
 }
 .my-work-img {
@@ -51,7 +51,6 @@
   left: 0;
   padding: 200px 0 90px 0;
 }
-
 .my-work-box {
   position: absolute;
   z-index: 0;
@@ -68,7 +67,15 @@
     font-weight: 800;
     margin-bottom: 50px;
   }
-  .my-work-box-body {
-    
+}
+
+
+@media only screen and (max-width: 600px) {
+  .my-work-image1 {
+    z-index: -1;
+    width: 100%;
+    right: 0;
+    padding: 0;
+    filter: brightness(0.5);
   }
 }
