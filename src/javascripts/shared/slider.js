@@ -23,8 +23,12 @@ const sliderData = [
 
 // eslint-disable-next-line import/prefer-default-export
 export function changeHomeSliderBodyText(index) {
+  // eslint-disable-next-line no-undef
   $('.body-top-text').text(sliderData[index].top);
+  // eslint-disable-next-line no-undef
   $('.body-head-text').text(sliderData[index].header);
+  // eslint-disable-next-line no-undef
   $('.body-bottom-text').text(sliderData[index].bottom);
+  // eslint-disable-next-line no-undef
   $('.body-button').text(sliderData[index].btn);
 }

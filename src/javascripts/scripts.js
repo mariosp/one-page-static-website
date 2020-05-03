@@ -24,10 +24,11 @@ $(document).on('submit', '#formContactMe', (event) => {
   } else if (event.target[2].value === '') {
     $("input[name='Message']").select();
   } else {
+    // eslint-disable-next-line no-alert
     alert(
       `Name: ${event.target[0].value}
        Email: ${event.target[1].value}
-       Message: ${event.target[2].value}`
+       Message: ${event.target[2].value}`,
     );
     $('#formContactMe')[0].reset();
   }
