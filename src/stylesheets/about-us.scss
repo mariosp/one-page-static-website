@@ -1,6 +1,6 @@
 .about-us {
-  height: calc(100vh - 56px);
-  width: 100%;
+  min-height: 100vh;
+  padding-top: 56px;
 }
 .about-me-box {
   padding-top: 25px;
